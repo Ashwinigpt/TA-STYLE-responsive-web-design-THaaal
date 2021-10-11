@@ -1,0 +1,133 @@
+<!-- writeCode
+
+- Create a responsive layout according to the design shown below.
+
+#### Large Screen view(Above 768px)
+
+![Responsive Layout Assignment](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/rwd/ex-1-desktop-view.png)
+
+#### Small Screen view(Below 768px)
+
+![Responsive Layout Assignment](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/rwd/ex-1-mob-view.png)
+
+- Using CSS resets is necessary.
+
+- Use semantic tags and keep the nesting and indentation proper.
+
+- Pay attention to the codes, your code quality matters a lot.
+
+- Try to implement the layout as exactly as it has been provided in the design.
+
+- Pay attention to minor things like spacing, alignment, size, etc.
+
+- Use any font-family which suits better for the assignment.
+
+- Once you are done with the assignment connect with the mentor and get the code reviewed. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-1 of Responsive Web Design</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="stylesheet/style.css">
+  <!-- Font Family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/19cfdc048e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="flex column">
+        <a href="#">
+          <img class="logo" src="./assets/logo.png" alt="logo">
+        </a>
+        <ul class="navbar flex ">
+          <li class="navbar-item">
+            <a href="#">home</a>
+          </li>
+          <li>
+            <a class="blog" href="#">blog</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#">about</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="article">
+      <article class="container flex">
+        <div class="flex-48 order-1">
+          <h1>What is Lorem Ipsum?</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, culpa expedita iste tempore nihil
+            quisquam molestias laudantium veniam voluptatum! Deleniti, libero eum! Esse tempora excepturi maiores, iste
+            commodi aliquam quae? name are domestic area of the there may be query better time tempore fuga quidem
+            corrupti nostrum deserunt temporibus. Ullam atque Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Amet id non cupiditate ex voluptatem neque. Odit ducimus autem soluta quidem adipisci dolores aut modi,
+            neque corrupti eius iusto dolorem labore!
+            modi incidunt, repellendus reprehenderit laboriosam enim!</p>
+          <a class="btn" href="#">Read More</a>
+        </div>
+        <figure class="flex-48">
+          <img class="full-width" src="./assets/01.png" alt="2-pencil">
+        </figure>
+      </article>
+    </section>
+
+    <section class="blog">
+      <h2>Our Blog</h2>
+      <article class="container flex">
+        <div class="flex-30">
+          <figure class="font-0">
+            <img class="full-width" src="./assets/02.png" alt="books & coffee mug">
+          </figure>
+          <h3>Why do we use it?</h3>
+          <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate doloribus voluptatem omnis
+            veniam quia
+            reiciendis placeat, blanditiis autem? Nisi there may be are the two variable of?</p>
+          <a class="btn sec" href="#">Read More</a>
+        </div>
+        <div class="flex-30">
+          <figure class="font-0">
+            <img class="full-width" src="./assets/03.png" alt="telephone">
+          </figure>
+          <h3>Where does it come from?</h3>
+          <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate doloribus voluptatem omnis
+            veniam quia
+            reiciendis placeat, blanditiis autem? Nisi there may be are the two variable of?</p>
+          <a class="btn sec" href="#">Read More</a>
+        </div>
+        <div class="flex-30">
+          <figure class="font-0">
+            <img class="full-width" src="./assets/04.png" alt="laptop">
+          </figure>
+          <h3>Where can i get some?</h3>
+          <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate doloribus voluptatem omnis
+            veniam quia
+            reiciendis placeat, blanditiis autem? Nisi there may be are the two variable of?</p>
+          <a class="btn sec" href="#">Read More</a>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container flex column">
+      <small>&copy; AltCampus</small>
+      <nav class="navicon">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+      </nav>
+    </div>
+  </footer>
+</body>
+
+</html>
