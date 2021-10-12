@@ -1,0 +1,230 @@
+<!-- writeCode
+
+- Create a responsive layout according to the design shown below.
+
+#### Large Screen view(Above 768px)
+
+![Responsive Layout Assignment](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/rwd/ex-2.png)
+
+#### Small Screen view(Below 768px)
+
+1. Figure what would be the best possible way to display the layout on small screens.
+
+2. Create hmaburger icon to toggle menu on mobile view.
+
+- Using CSS resets is necessary.
+- Use semantic tags and keep the nesting and indentation proper.
+- Pay attention to the codes, your code quality matters a lot.
+- Try to implement the layout as exactly as it has been provided in the design.
+- Pay attention to minor things like spacing, alignment, size, etc.
+- Use "Nunito" font-family for the assignment.
+- Figure out the best possible way to display the layout on small screens.
+- Create hmaburger icon to toggle menu on small screen view.
+- Once you are done with the assignment connect with the mentor and get the code reviewed. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-2 of Responsive Web Design</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="stylesheet/style.css">
+  <!-- Font Family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/19cfdc048e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="flex">
+        <a class="brand" href="#">Alt Events</a>
+        <ul class="navbar flex">
+          <li>
+            <a href="#">home</a>
+          </li>
+          <li>
+            <a href="#">about</a>
+          </li>
+          <li>
+            <a href="#">services</a>
+          </li>
+          <li>
+            <a href="#">contact</a>
+          </li>
+          <li class="join-us">
+            <a class="btn" href="#">join us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <article class="container flex">
+      <div class="flex-50">
+        <h1>Web Developer Conference <strong>2020</strong></h1>
+        <p class="para-hero">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam saepe quod blanditiis, ad
+          beatae autem ipsum
+          excepturi iusto a possimus, iure facere, quasi laudantium consequatur deserunt temporibus libero sequi itaque!
+        </p>
+        <a class="btn" href="#">Register Now</a>
+      </div>
+      <figure class="flex-30">
+        <img class="full-width" src="./assets/hero.png" alt="singer">
+      </figure>
+    </article>
+  </section>
+  <section>
+    <article class="container flex padding">
+      <figure class="flex-48">
+        <img class="full-width" src="./assets/about.png" alt="about">
+      </figure>
+      <div class="flex-48">
+        <h2>about the event</h2>
+        <p class="para-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quia aperiam repellat?
+          Pariatur, voluptate
+          esse asperiores, soluta iure iusto ipsa saepe similique perferendis dolorem, nisi eligendi.</p>
+        <a class="btn" href="#">Know More</a>
+      </div>
+    </article>
+  </section>
+  <section class="bg-color">
+    <div class="container padding">
+      <h3>Why You Should Join</h3>
+      <div class="flex padding">
+        <div class="border flex-30">
+          <h4>Network</h4>
+          <p class="para-border">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facilis doloribus
+            voluptatem sequi voluptate
+            accusamus vel deleniti, dolore lorem are the important thinks fugit excepturi.</p>
+        </div>
+        <div class="border flex-30">
+          <h4>Great Speakers</h4>
+          <p class="para-border">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facilis doloribus
+            voluptatem sequi voluptate
+            accusamus vel deleniti, dolore lorem are the important thinks fugit excepturi.</p>
+        </div>
+        <div class="border flex-30">
+          <h4>Information</h4>
+          <p class="para-border">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facilis doloribus
+            voluptatem sequi voluptate
+            accusamus vel deleniti, dolore lorem are the important thinks fugit excepturi.</p>
+        </div>
+      </div>
+      <div>
+        <span class="one">1</span>
+        <span class="two">2</span>
+        <span class="three">3</span>
+      </div>
+    </div>
+  </section>
+  <section class="container padding">
+    <h3>Schedule</h3>
+    
+
+  </section>
+  <section class="bg-color">
+    <div class="container-2 flex padding">
+      <div class="schedule">
+        <img src="./assets/speaker.png" alt="speaker">
+        <h4>20+</h4>
+        <h5>Great Speakers</h5>
+      </div>
+      <div class="schedule-red">
+        <img src="./assets/idea.png" alt="idea">
+        <h4>50+</h4>
+        <h5 class="h5">Total Topic</h5>
+      </div>
+      <div>
+        <img src="./assets/participants.png" alt="participants">
+        <h4>300+</h4>
+        <h5>Participants</h5>
+      </div>
+      <div>
+        <img src="./assets/sponsor.png" alt="sponser">
+        <h4>20+</h4>
+        <h5>Sponsers</h5>
+      </div>
+    </div>
+  </section>
+  <section class="container padding banner-video">
+    <figure class="banner">
+      <img class="full-width" src="./assets/banner.png" alt="banner">
+    </figure>
+    <div class="start-video">
+      <a href="#"><i class="fas fa-play"></i></a>
+    </div>
+  </section>
+  <section class="bg-color padding">
+    <h3>Our Latest News</h3>
+    <div class="container flex padding">
+      <article class="flex-30">
+        <img class="full-width" src="./assets/news-01.png" alt="news-01">
+        <h6>How to build a great portfolio as a beginner developer</h6>
+        <p class="para-news">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptates, expedita
+          odio assumenda aliquam amet temporibus delectus.</p>
+        <a class="read-more" href="#">Read More</a>
+      </article>
+      <article class="flex-30">
+        <img class="full-width" src="./assets/news-02.png" alt="news-02">
+        <h6>Four common situations while using Git and how to solve them</h6>
+        <p class="para-news">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptates, expedita
+          odio assumenda aliquam amet temporibus delectus.</p>
+        <a class="read-more active" href="#">Read More</a>
+      </article>
+      <article class="flex-30">
+        <img class="full-width" src="./assets/news-03.png" alt="news-03">
+        <h6>Basic unix commands that you should know</h6>
+        <p class="para-news">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptates, expedita
+          odio assumenda aliquam amet temporibus delectus.</p>
+        <a class="read-more" href="#">Read More</a>
+      </article>
+    </div>
+  </section>
+  <footer >
+    <div class="footer">
+      <div class="container-3 flex">
+        <figure class="flex-30">
+          <img src="./assets/footer-logo.png" alt="footer-logo">
+        </figure>
+        <div>
+          <h5 class="white">Quick Links</h5>
+          <nav class="footer-nav">
+            <ul class="flex">
+              <li>
+                <a href="#">Program</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+              <li>
+                <a href="#">Services</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="follow-us">
+          <h5 class="white">Follow Us</h5>
+          <nav class="nav-icon">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+          </nav>
+        </div>
+      </div>
+    </div>
+      <div class="footer-2">
+        <small>&copy;AltCampus Services Pvt Ltd, 2018-present</small>
+      </div>
+    
+  </footer>
+</body>
+
+</html>
